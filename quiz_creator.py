@@ -17,9 +17,16 @@ with open(quiz_file, "a") as quiz, open(answer_file, "a") as answer:
             choice = input(f"Add choice {option}: ").title()
             choices.append((option, choice))
 
-        correct_answer = input("Enter the correct answer: ").capitalize()
+        valid_choice = [choice for _, choice in choices]
+        correct_answer = ""
+        while correct_answer not in valid_choice:
+            correct_answer = input("Enter the correct answer: ").title()
+            if correct_answer not in valid_choice:
+                print("Invalid input. Try again.")
+            elif correct_answer in valid_choice:
+                break
 
-        #Append all the inputs on their respective files
+            #Append all the inputs on their respective files
         quiz.write("Question: " + questions + "\n")
         for option, choice in choices:
             quiz.write(f"{option}. {choice}\n")
