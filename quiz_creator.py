@@ -10,3 +10,12 @@ with open(quiz_file, "a") as quiz, open(answer_file, "a") as answer:
         if questions == "exit":
             print("Saving inputs.. Exiting..")
             break
+
+        #Add another user input for the choices and correct answers
+        choices = []
+        for option in ["A", "B", "C", "D"]:
+            choice = input(f"Add choice {option}: ")
+            choices.append((option, choice))
+
+        correct_answer = input("Enter the correct answer: ")
+
