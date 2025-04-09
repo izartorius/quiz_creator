@@ -19,3 +19,11 @@ with open(quiz_file, "a") as quiz, open(answer_file, "a") as answer:
 
         correct_answer = input("Enter the correct answer: ")
 
+        #Append all the inputs on their respective files
+        quiz.write("Question: " + questions + "\n")
+        for option, choice in choices:
+            quiz.write(f"{option}. {choice}\n")
+        quiz.write("-" * 50 + "\n")
+
+        answer.write(f"{questions}"
+                     f"Answer: {correct_answer}")
