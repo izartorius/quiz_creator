@@ -27,3 +27,5 @@ with open(quiz_file, "a") as quiz, open(answer_file, "a") as answer:
 
         answer.write(f"{questions} " 
                      f"Answer: {correct_answer} \n")
+
+    print("JAGAAAAN! Transfer complete.")
