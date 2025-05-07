@@ -38,3 +38,5 @@ def run_quiz(quiz):
     print(f"\nYour score: {score}/{len(quiz)}")
 
 #Run the quiz with the loaded data
+quiz = load_quiz("quiz.txt", "answer.txt")
+run_quiz(quiz)
