@@ -27,6 +27,14 @@ def load_quiz(questions_file, answers_file):
 #Defines the function to run the quiz using the list of questions and answers
 def run_quiz(quiz):
     score = 0 #Initialize score
+    for question, correct_answer in quiz:
+        print("\n" + question)  # Display the full question with choices
+        user_answer = input("Your answer: ")
+        if user_answer.strip().upper() == correct_answer.strip().upper():
+            print("Correct!")
+            score += 1
+        else:
+            print(f"Wrong! The correct answer was: {correct_answer}")
+    print(f"\nYour score: {score}/{len(quiz)}")
 
-#Define function for running the quiz game
 #Run the quiz with the loaded data
