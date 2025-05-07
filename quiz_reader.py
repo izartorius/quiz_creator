@@ -8,6 +8,8 @@ def load_quiz(questions_file, answers_file):
     with open(answers_file, 'r') as af:
         #Strips all the spaces and blank lines in the text file
         answers = [line.strip() for line in af if line.strip() != '']
+    #Stores the data (questions, answers) extracted from the text files
+    quiz = []
 #Remove all spaces in the text file
 #Take every 5 lines from the text file as a one question
 #Define function for running the quiz game
