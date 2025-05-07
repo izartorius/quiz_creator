@@ -30,9 +30,7 @@ with open(quiz_file, "a") as quiz, open(answer_file, "a") as answer:
         quiz.write("Question: " + questions + "\n")
         for option, choice in choices:
             quiz.write(f"{option}. {choice}\n")
-        quiz.write("-" * 50 + "\n")
 
-        answer.write(f"{questions} " 
-                     f"Answer: {correct_answer} \n")
+        answer.write(f"{correct_answer} \n")
 
     print("JAGAAAAN! Transfer complete.")

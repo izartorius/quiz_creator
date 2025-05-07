@@ -1,18 +1,10 @@
-Question: How much does bloodthirster cost?
-A. 3200
-B. 3300
-C. 3400
-D. 3000
---------------------------------------------------
-Question: Who is the primordial demon of fear in runeterra?
-A. Azakana
-B. Raum
-C. Nocturne
-D. Fiddlesticks
---------------------------------------------------
-Question: The process in which black holes lose their mass by a tiny amount in a specific amount of time is called?
-A. Quantum Tunnelling
-B. Entropy
-C. Hawking Radiation
-D. Entanglement
---------------------------------------------------
+Question: What do you call the vertical line in the chessboard?
+A. Rank
+B. File
+C. Skewer
+D. Row
+Question: It is when a player in chess can only play disadvantageous moves in a specific position
+A. Zugzwang
+B. Pin
+C. Check
+D. En Passant
