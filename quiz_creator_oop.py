@@ -71,3 +71,13 @@ class QuizManager:
                 Writes the correct answer to the answer file.
                 """
                 answer_file.write(correct_answer + "\n")
+
+# Specify file names for storing quiz questions and answers
+quiz_file = "quiz.txt"
+answer_file = "answers.txt"
+
+# Create an instance of QuizManager with the file paths
+quiz_app = QuizManager(quiz_file, answer_file)
+
+# Start the quiz creation loop
+quiz_app.run()
