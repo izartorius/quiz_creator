@@ -33,3 +33,27 @@ class QuizManager:
                     self.write_answer(answer, correct_answer)
 
             print("JAGAAAAN! Transfer complete.")
+
+    def collect_choices(self):
+        """
+        Collects four multiple-choice options (A, B, C, D) from the user.
+        Returns a list of (letter, choice) tuples.
+        """
+        choices = []
+        for option in ["A", "B", "C", "D"]:
+            choice = input(f"Add choice {option}: ").title()
+            choices.append((option, choice))
+        return choices
+
+    def get_correct_answer(self, choices):
+        """
+        Prompts the user to input the correct answer.
+        Repeats until a valid choice (one of the entered options) is given.
+        Returns the correct answer string.
+        """
+        valid_choices = [choice for _, choice in choices]
+        while True:
+            answer = input("Enter the correct answer: ").title()
+            if answer in valid_choices:
+                return answer
+            print("Invalid input. Try again.")
