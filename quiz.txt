@@ -8,3 +8,8 @@ A. Zugzwang
 B. Pin
 C. Check
 D. En Passant
+Question: What is the proposed model of ptolemy about the model of the universe?
+A. The Copernician Law
+B. Geocentric Model
+C. Heliocentrism
+D. Ellipticsm
