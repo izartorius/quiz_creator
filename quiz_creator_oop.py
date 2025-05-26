@@ -19,3 +19,17 @@ class QuizManager:
                 if question.lower() == "exit":
                     print("Saving inputs.. Exiting..")
                     break
+
+                    # Collect the choices for the question (A-D)
+                    choices = self.collect_choices()
+
+                    # Get the correct answer from the user and validate it
+                    correct_answer = self.get_correct_answer(choices)
+
+                    # Write the question and choices to the quiz file
+                    self.write_question(quiz, question, choices)
+
+                    # Write the correct answer to the answer file
+                    self.write_answer(answer, correct_answer)
+
+            print("JAGAAAAN! Transfer complete.")
