@@ -57,3 +57,17 @@ class QuizManager:
             if answer in valid_choices:
                 return answer
             print("Invalid input. Try again.")
+
+    def write_question(self, quiz_file, question, choices):
+                """
+                Writes the question and its choices to the quiz file.
+                """
+                quiz_file.write("Question: " + question + "\n")
+                for option, choice in choices:
+                    quiz_file.write(f"{option}. {choice}\n")
+
+    def write_answer(self, answer_file, correct_answer):
+                """
+                Writes the correct answer to the answer file.
+                """
+                answer_file.write(correct_answer + "\n")
