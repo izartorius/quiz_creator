@@ -22,3 +22,23 @@ def load_quiz(self):
         full_question = '\n'.join(question_block)  # Join the lines into a single string with newlines
         answer = answers[i // 5]  # Get the corresponding answer from the answer list
         self.quiz_data.append((full_question, answer))  # Store the question and answer as a tuple
+
+        def run(self):
+            """
+            Runs the quiz by iterating over each question, prompting the user for an answer,
+            and checking it against the correct answer.
+            """
+            # Loop through each question and its corresponding correct answer
+            for question, correct_answer in self.quiz_data:
+                print("\n" + question)  # Print the question (with multiple lines)
+                user_answer = input("Your answer: ")  # Prompt user for an answer
+
+                # Compare user input with correct answer (case-insensitive)
+                if user_answer.strip().upper() == correct_answer.strip().upper():
+                    print("Correct!")
+                    self.score += 1  # Increment score if answer is correct
+                else:
+                    print(f"Wrong! The correct answer was: {correct_answer}")  # Show correct answer if wrong
+
+            # Display final score after all questions are answered
+            print(f"\nYour score: {self.score}/{len(self.quiz_data)}")
