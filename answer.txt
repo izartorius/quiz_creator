@@ -1,2 +1,5 @@
-File
-Zugzwang 
+A
+C
+A
+D
+C

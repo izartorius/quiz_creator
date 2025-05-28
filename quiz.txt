@@ -1,15 +1,35 @@
-Question: What do you call the vertical line in the chessboard?
-A. Rank
-B. File
-C. Skewer
-D. Row
-Question: It is when a player in chess can only play disadvantageous moves in a specific position
-A. Zugzwang
-B. Pin
-C. Check
-D. En Passant
-Question: What is the proposed model of ptolemy about the model of the universe?
-A. The Copernician Law
-B. Geocentric Model
+Question: What was the name of the universe' model that was theorized by ptolemy in the late 13th century?
+A. Geocentric Model
+B. Planetary System
 C. Heliocentrism
-D. Ellipticsm
+D. Fern'S Model
+Question: What is the vertical line on a chessboard called?
+A. Rank
+B. Coordinate
+C. File
+D. Row
+Question: Who was the apprentice of thomas edison whom he stole credit for his works?
+A. Nikola Tesla
+B. Jeanne Ausbert
+C. Freud Bellson
+D. Charles Winston
+Question: What was the most debated theory in the 15th century that the church considered as heresy?
+A. Geocentrism
+B. Satanism
+C. Naturalism 
+D. Heliocentrism
+Question: Who was the person to proposed that the sun is the center of the universe?
+A. Galileo Galilei
+B. Ptolemy
+C. Nicolaus Copernicus
+D. Aristotle
+Question: What keeps the planets from orbiting around the sun?
+A. Electromagnetic Field
+B. Gravity
+C. Weak Force
+D. Energy
+Question: What is the universal solvent?
+A. Hydrogen
+B. Water
+C. Acid
+D. Brine

@@ -20,19 +20,17 @@ class QuizManager:
                     print("Saving inputs.. Exiting..")
                     break
 
-                    # Collect the choices for the question (A-D)
-                    choices = self.collect_choices()
+                # Collect the choices for the question (A-D)
+                choices = self.collect_choices()
 
-                    # Get the correct answer from the user and validate it
-                    correct_answer = self.get_correct_answer(choices)
+                # Get the correct answer from the user and validate it
+                correct_answer = self.get_correct_answer(choices)
 
-                    # Write the question and choices to the quiz file
-                    self.write_question(quiz, question, choices)
+                # Write the question and choices to the quiz file
+                self.write_question(quiz, question, choices)
 
-                    # Write the correct answer to the answer file
-                    self.write_answer(answer, correct_answer)
-
-            print("JAGAAAAN! Transfer complete.")
+                # Write the correct answer to the answer file
+                self.write_answer(answer, correct_answer)
 
     def collect_choices(self):
         """
@@ -59,25 +57,21 @@ class QuizManager:
             print("Invalid input. Try again.")
 
     def write_question(self, quiz_file, question, choices):
-                """
-                Writes the question and its choices to the quiz file.
-                """
-                quiz_file.write("Question: " + question + "\n")
-                for option, choice in choices:
-                    quiz_file.write(f"{option}. {choice}\n")
+        quiz_file.write("Question: " + question + "\n")
+        for option, choice in choices:
+            quiz_file.write(f"{option}. {choice}\n")
 
     def write_answer(self, answer_file, correct_answer):
-                """
-                Writes the correct answer to the answer file.
-                """
-                answer_file.write(correct_answer + "\n")
+        answer_file.write(correct_answer + "\n")
 
 # Specify file names for storing quiz questions and answers
 quiz_file = "quiz.txt"
-answer_file = "answers.txt"
+answer_file = "answer.txt"
 
 # Create an instance of QuizManager with the file paths
 quiz_app = QuizManager(quiz_file, answer_file)
 
 # Start the quiz creation loop
 quiz_app.run()
+
+print("JAGAAAAN! Transfer complete.")
